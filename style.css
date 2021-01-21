@@ -1,0 +1,80 @@
+body {
+    margin:0;
+    padding: 0;
+    background: #005C97; 
+    background: -webkit-linear-gradient(to right, #363795, #005C97);  
+    background: linear-gradient(to right, #363795, #005C97); 
+}
+
+.contenedor {
+   height: 100vh;
+   display: flex;
+   justify-content: center;
+   align-items: center;
+
+}
+
+.contenedor-calculadora {
+    width: 30%;
+    height: 450px;
+    background-color:#aaaaaa;
+    border-radius: 10px;
+    box-shadow: 2px 1px 29px 6px rgba(0,0,0,0.5);
+    padding: 25px;
+    display: grid;
+    grid-template-columns: repeat(4,1fr);
+    grid-template-rows: 85px;
+    grid-gap:20px;
+}
+
+.screen {
+    background-color:#414141;
+    border-radius: 10px;
+    color:#005C97;
+    padding: 15px;
+    grid-column:1/5;
+}
+
+.screen >input {
+    background:none;
+    color:inherit;
+    border:none;
+    padding: 0;
+    outline: inherit;
+    font-size:45px;
+    width: 100%;
+}
+
+.btn-cal {
+    background-color:white;
+}
+
+.btn-cal-radius {
+    border-radius: 10px;
+}
+
+.btn-cal >input {
+    border:0;
+    height: 100%;
+    width: 100%;
+    border-radius: 10px;
+    outline: none;
+    color:#7e7e7e;
+    font-size: 35px;
+}
+
+.btn-cal > .equal {
+    background:gray;
+    color:white;
+}
+
+.btn-cal :hover {
+    transition-duration: 0.4s ;
+    background:grey;
+    color:white;
+}
+
+.btn-equal :hover {
+    transition-duration: 0.4s;
+    box-shadow: 2px 1px 29px 6px rgb(255, 255, 255);
+}
